@@ -1,3 +1,5 @@
+console.log(dados)
+
 for (let index = 0; index < dados.length; index++) {
     const item = dados[index];
 
@@ -30,7 +32,7 @@ function criarItem(titulo, link, descricao, info){
 const form = document.getElementById('pesquisa');
 form.addEventListener('submit', (event) => {
     event.preventDefault(); // Impede o envio padrão do formulário
-    const formData = new FormData(form);   
+    const formData = new FormData(form);
 
     const pesquisa = Object.fromEntries(formData.entries());
     console.log(pesquisa);

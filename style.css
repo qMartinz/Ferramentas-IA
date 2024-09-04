@@ -74,6 +74,12 @@ section {
     color: var(--azul);
 }
 
+section form {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
 /* Estiliza os parágrafos dentro das seções */
 section p{
     font-family: 'Barlow', sans-serif;
