@@ -17,79 +17,18 @@
     <main>
         <section>
             <p>Precisa de uma ferramenta IA? A gente acha!</p>
-            <input type="text" name="search" id="search" placeholder="Pesquise uma ferramenta IA">
-            <button>Pesquisar</button>
+            <form id="pesquisa">
+                <input type="text" name="search" id="search" placeholder="Pesquise uma ferramenta IA">
+                <button id="submit" type="submit">Pesquisar</button>
+            </form>
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://gemini.google.com" target="_blank">Gemini</a>
-                </h2>
-                <p class="descricao-meta">
-                    Gemini: Uma Nova Era na Inteligência Artificial
-                    O Gemini é a mais recente e poderosa criação da 
-                    Google DeepMind, representando um avanço significativo 
-                    na área da inteligência artificial. Essa IA 
-                    multi-modal é capaz de processar e gerar diferentes 
-                    tipos de dados, como texto, código e até mesmo 
-                    imagens, o que a torna uma ferramenta extremamente 
-                    versátil.
-                </p>
-                <a href="https://pt.wikipedia.org/wiki/Gemini_(modelo_de_linguagem)" target="_blank">Mais informações</a>
-            </div>
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://chatgpt.com" target="_blank">Chat-GPT</a>
-                </h2>
-                <p class="descricao-meta">
-                    O ChatGPT é um modelo de linguagem de grande porte 
-                    desenvolvido pela OpenAI, capaz de gerar textos semelhantes 
-                    aos humanos em conversas. Ele utiliza a arquitetura GPT 
-                    (Generative Pre-trained Transformer) para compreender e 
-                    responder a uma ampla variedade de perguntas e solicitações, 
-                    tornando as interações com a inteligência artificial mais 
-                    naturais e intuitivas.
-                </p>
-                <a href="https://pt.wikipedia.org/wiki/ChatGPT" target="_blank">Mais informações</a>
-            </div>
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://www.microsoft.com/copilot" target="_blank">Microsoft Copilot</a>
-                </h2>
-                <p class="descricao-meta">
-                    O Microsoft Copilot é um assistente de IA integrado 
-                    à plataforma Microsoft 365, projetado para aumentar 
-                    a produtividade dos usuários. Ele utiliza a tecnologia 
-                    GPT para gerar texto, traduzir idiomas, escrever diferentes 
-                    tipos de conteúdo criativo e responder a suas perguntas 
-                    de forma informativa. O Copilot está disponível em diversos 
-                    aplicativos da Microsoft, como o Word, Excel e PowerPoint, 
-                    tornando-o uma ferramenta poderosa para o dia a dia.
-                </p>
-                <a href="https://en.wikipedia.org/wiki/Microsoft_365_Copilot" target="_blank">Mais informações</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://mistral.ai" target="_blank">Mistral AI</a>
-                </h2>
-                <p class="descricao-meta">
-                    O Mistral AI é uma empresa de pesquisa em IA focada 
-                    no desenvolvimento de modelos de linguagem de grande 
-                    porte. Seu modelo principal, o Mistral 7B, é conhecido 
-                    por sua alta qualidade e capacidade de gerar textos 
-                    criativos e coerentes. O Mistral AI tem como objetivo 
-                    democratizar o acesso à IA, oferecendo modelos de 
-                    linguagem de código aberto e ferramentas para 
-                    desenvolvedores.
-                </p>
-                <a href="https://en.wikipedia.org/wiki/Mistral_AI" target="_blank">Mais informações</a>
-            </div>
-        </section>
+        <section class="resultados-pesquisa"></section>
     </main>
     <footer>
         <p>2024 - Ferramentas IA. Todos os direitos reservados</p>
         <p>Entre em contato pelo email: gustavo@ferramentasia.com.br</p>
     </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
