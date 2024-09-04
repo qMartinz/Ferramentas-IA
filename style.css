@@ -1,0 +1,60 @@
+/*
+Paleta de Cores
+Azul Marinho: #00274C
+Púrpura: #230455
+Roxo Claro: #8A2BE2
+Ciano Claro: #22A7F0
+Cinza Claro: #F0F0F0
+Branco: #FFFFFF
+*/
+
+/* Importa as fontes Nunito e Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilizar o corpo da página */
+body{
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    font-family: 'Nunito', serif; /* Define a fonte padrão */
+    background: #F0F0F0; /* Altera o fundo */
+}
+
+/* Estilizar o cabeçalho da página */
+header{
+    background: linear-gradient(#00274C, #230455); /* Altera o fundo */
+    color: #FFFFFF; /* Altera a cor do texto */
+    padding: 10px 0 10px 2.5rem; /* Altera o espaçamento interno */
+}
+
+/* Estilizar títulos no cabeçalho */
+header h1{
+    margin: 0; /* Remove a margem padrão */
+    letter-spacing: 0.1rem; /* Altera o espaçamento entre as letras */
+    font-size: 2.5rem; /* Altera o tamanho da fonte */
+    font-family: 'Poppins', sans-serif; /* Define a fonte */
+}
+
+/* Estilizar o conteúdo da página */
+main{
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    background-image: url("./img/background.png");
+    min-height: 50vh;
+}
+
+/* Estilizar o rodapé da página */
+footer{
+    background: linear-gradient(#00274C, #230455); /* Altera o fundo */
+    color: #FFFFFF; /* Altera a cor do texto */
+    padding: 10px 0 10px 2.5rem; /* Altera o espaçamento interno */
+}
+
+/* Estilizar parágrafos no rodapé */
+footer p{
+    margin: 0; /* Remove a margem padrão */
+}
