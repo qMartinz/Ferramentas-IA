@@ -26,9 +26,13 @@ body {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     height: 100vh; /* Preenche a altura total da viewport */
+    min-height: 100vh;
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
     background: #F0F0F0; /* Altera o fundo */
+    overflow-y: auto; /* Aumenta o tamanho do conteúdo para preencher a página */
+    align-items: stretch; /* Estica o conteúdo para preencher a página */
+    width: 100%;
 }
 
 /* Estilizar o cabeçalho da página */
@@ -39,6 +43,7 @@ header {
     background: var(--azul); /* Altera o fundo */
     color: var(--branco); /* Altera a cor do texto */
     margin: 0; /* Remove a margem padrão */
+    flex-basis: 50px; /* Define o tamanho preferido do flex */
 }
 
 /* Estilizar título do cabeçalho */
@@ -94,8 +99,8 @@ main {
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     background: url("./img/background.gif"); /* Altera o fundo */
     background-size: cover; /* Altera o tamanho da imagem de fundo */
-    padding: 0.6rem 0 0.6rem 0; /* Espaço interno */
-    height: 100vh; /* Tamanho do conteúdo */
+    overflow-y: auto; /* Distribui o conteúdo automaticamente para preencher a página */
+    flex: 1; /* Define o tamanho do item flex */
 }
 
 /* Estiliza as seções da página */
@@ -176,7 +181,6 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 40vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
@@ -233,10 +237,12 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     margin: 0; /* Remove a margem padrão */
     width: 100%; /* Largura total da página */
-    position: relative; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
-    padding: 0.6rem 0 0.6rem 0; /* Altera o espaçamento */
     font-family: 'Barlow', sans-serif; /* Altera a fonte */
+    flex-basis: 50px; /* Altera o tamanho preferido do footer */
+    display: flex; /* Layout em modo flexbox */
+    flex-direction: column; /* Altera a direção do  */
+    align-items: center; /* Alinha os itens na vertical */
+    justify-content: center; /* Centraliza o conteúdo na vertical */
 }
 
 /* Estilizar as âncoras no rodapé */
@@ -284,7 +290,28 @@ footer p {
     height: 0px; /* Altura da barra de scroll */
 }
 
+@media (max-width: 990px) {
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header div {
+        padding: 0;
+    }
+
+    header nav {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
@@ -296,12 +323,15 @@ footer p {
     }
 
     .resultados-pesquisa {
-        width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
+        width: 30rem; /* Largura da caixa de resultados em telas menores */
     }
 
     .item-resultado h2 {
         font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+
+    footer p {
+        font-size: 0.8rem;
     }
 }
 
@@ -324,7 +354,6 @@ footer p {
 
     .resultados-pesquisa {
         width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
     }
 
     .item-resultado h2 {
