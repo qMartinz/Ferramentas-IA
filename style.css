@@ -75,7 +75,7 @@ header nav a:hover {
 
 /* Estilizar imagens no cabeçalho da página */
 header img {
-    margin-right: 10px;
+    margin-right: 10px; /* Espaçamento à direita */
 }
 
 /* Estilizar títulos no cabeçalho */
@@ -95,6 +95,7 @@ main {
     background: url("./img/background.gif"); /* Altera o fundo */
     background-size: cover; /* Altera o tamanho da imagem de fundo */
     padding: 0.6rem 0 0.6rem 0; /* Espaço interno */
+    height: 100vh;
 }
 
 /* Estiliza as seções da página */
@@ -106,6 +107,7 @@ section {
     color: var(--branco); /* Cor do texto */
 }
 
+/* Estiliza os formulário das seções */
 section form {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
@@ -174,7 +176,7 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 45vh; /* Altura máxima da caixa de resultados */
+    height: 40vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
@@ -231,7 +233,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     margin: 0; /* Remove a margem padrão */
     width: 100%; /* Largura total da página */
-    position: fixed; /* Posiciona o rodapé */
+    position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     padding: 0.6rem 0 0.6rem 0; /* Altera o espaçamento */
     font-family: 'Barlow', sans-serif; /* Altera a fonte */
@@ -253,7 +255,7 @@ footer a:hover {
 
 /* Estilizar os parágrafos dentro do rodapé */
 footer p {
-    margin: 0;
+    margin: 0; /* Remove os espaçamentos padrão */
 }
 
 /* Estiliza a barra de scroll */
@@ -264,16 +266,17 @@ footer p {
     transition: box-shadow 0.4s ease-in-out; /* Transição do efeito neon */
 }
 
-/* Estiliza a barra de scroll */
+/* Adiciona efeito hover à barra de scroll */
 .resultados-pesquisa::-webkit-scrollbar:hover {
-    box-shadow: 0 0 10px var(--roxo);
+    box-shadow: 0 0 10px var(--roxo); /* Efeito neon */
 }
 
+/* Estiliza a barrinha da scrollbar */
 .resultados-pesquisa::-webkit-scrollbar-thumb {
-    background: #711cc1;
-    border-radius: 1rem;
-    background-clip: content-box;
-    border: solid 4px transparent;
+    background: #711cc1; /* Cor do fundo */
+    border-radius: 1rem; /* Arredonda as bordas */
+    background-clip: content-box; /* Borda interna */
+    border: solid 4px transparent; /* Deixa a borda invisível para diminuir a barra */
 }
 
 @media (max-width: 768px) {
