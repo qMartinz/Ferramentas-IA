@@ -1,32 +1,42 @@
-console.log(dados)
+let resultados = "";
+function pesquisar(pesquisa){
+    if (pesquisa !== ""){
+        resultados = "";
+        let section = document.getElementById('resultados');
 
-for (let index = 0; index < dados.length; index++) {
-    const item = dados[index];
+        const palavrasChave = pesquisa.split(' ');
+    
+        let filtrados = dados.filter(item => {
+            // Verifica se todos os temas do item incluem alguma das palavras-chave
+            return palavrasChave.some(palavra => {
+                return item.temas.some(tema => tema.toLowerCase().includes(palavra.toLowerCase()));
+            });
+        });
 
-    criarItem(item.titulo, item.link, item.descricao, item.info);
+        console.log(filtrados);
+    
+        for (let item of filtrados) {
+            criarItem(item.titulo, item.link, item.descricao, item.info);
+        }
+    
+        console.log(palavrasChave, resultados);
+    
+        section.innerHTML = resultados;
+    }
 }
 
 function criarItem(titulo, link, descricao, info){
-    var div = document.createElement('div');
-    div.classList.add('item-resultado');
-
-    var h2 = document.createElement('h2');
-    var linkh2 = document.createElement('a');
-    linkh2.href = link;
-    h2.append(linkh2);
-    linkh2.textContent = titulo;
-
-    var p = document.createElement('p');
-    p.textContent = descricao;
-
-    var linkinfo = document.createElement('a');
-    linkinfo.href = info;
-    linkinfo.textContent = 'Mais informações';
-
-    div.append(h2);
-    div.append(p);
-    div.append(linkinfo);
-    document.querySelector('.resultados-pesquisa').append(div);
+    resultados += `
+    <div class="item-resultado">
+        <h2>
+            <a href="${link}" target="_blank">${titulo}</a>
+        </h2>
+        <p class="descricao-meta">
+            ${descricao}
+        </p>
+        <a href="${info}" target="_blank">Mais informações</a>
+    </div>
+    `;
 }
 
 const form = document.getElementById('pesquisa');
@@ -35,5 +45,5 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
 
     const pesquisa = Object.fromEntries(formData.entries());
-    console.log(pesquisa);
+    pesquisar(pesquisa.search);
 });
