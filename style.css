@@ -174,7 +174,7 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 48vh; /* Altura máxima da caixa de resultados */
+    height: 45vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
@@ -254,6 +254,26 @@ footer a:hover {
 /* Estilizar os parágrafos dentro do rodapé */
 footer p {
     margin: 0;
+}
+
+/* Estiliza a barra de scroll */
+.resultados-pesquisa::-webkit-scrollbar {
+    background: rgba(17, 0, 255, 0.137); /* Cor de fundo */
+    border-radius: 0.6rem; /* Arredonda os cantos */
+    border: 1px var(--purpura) solid; /* Borda da barra */
+    transition: box-shadow 0.4s ease-in-out; /* Transição do efeito neon */
+}
+
+/* Estiliza a barra de scroll */
+.resultados-pesquisa::-webkit-scrollbar:hover {
+    box-shadow: 0 0 10px var(--roxo);
+}
+
+.resultados-pesquisa::-webkit-scrollbar-thumb {
+    background: #711cc1;
+    border-radius: 1rem;
+    background-clip: content-box;
+    border: solid 4px transparent;
 }
 
 @media (max-width: 768px) {
