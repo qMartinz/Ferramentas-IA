@@ -10,11 +10,11 @@ Branco:
 */
 
 /* Guarda as cores em variáveis */
-:root{
-    --azul: #00274C;
+:root {
+    --azul: #000a2b;
     --purpura: #3a0d82;
     --roxo: #711cc1;
-    --roxo-claro: #e9dcff;
+    --roxo-claro: #d1c0ee;
     --ciano: #22A7F0;
     --cinza: #45474B;
     --cinza-claro: #F0F0F0;
@@ -22,7 +22,7 @@ Branco:
 }
 
 /* Estilizar o corpo da página */
-body{
+body {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     height: 100vh; /* Preenche a altura total da viewport */
@@ -32,37 +32,69 @@ body{
 }
 
 /* Estilizar o cabeçalho da página */
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(var(--purpura), var(--azul)); /* Altera o fundo */
+header {
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: space-between; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    background: var(--azul); /* Altera o fundo */
     color: var(--branco); /* Altera a cor do texto */
     margin: 0; /* Remove a margem padrão */
 }
 
+/* Estilizar título do cabeçalho */
+header div {
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: left; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding-left: 30px; /* Espaço à esquerda */
+}
+
+/* Estilizar barra de navegação do cabeçalho */
+header nav {
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: right; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding-right: 30px; /* Espaço à direita */
+    gap: 20px; /* Espaço entre as âncoras */
+}
+
+/* Estilizar as âncoras na barra de navegação do cabeçalho */
+header nav a {
+    color: var(--branco); /* Cor do texto */
+    font-family: 'Barlow', sans-serif; /* Altera a fonte */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    transition: color 0.4s ease-in-out, text-shadow 0.4s ease-in-out; /* Adiciona transição à cor do texto */
+}
+
+/* Adiciona efeito hover às âncoras na barra de navegação do cabeçalho */
+header nav a:hover {
+    color: var(--ciano); /* Cor do texto */
+    text-shadow: 0 0 15px var(--ciano); /* Efeito neon ao texto */
+}
+
 /* Estilizar imagens no cabeçalho da página */
-header img{
+header img {
     margin-right: 10px;
 }
 
 /* Estilizar títulos no cabeçalho */
-h1{
+h1 {
     letter-spacing: 0.1rem; /* Altera o espaçamento entre as letras */
-    font-size: 2.5rem; /* Altera o tamanho da fonte */
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Altera o tamanho da fonte */
+    text-align: center; /* Alinha o texto */
+    font-family: 'Poppins', sans-serif; /* Altera a fonte */
 }
 
 /* Estilizar o conteúdo da página */
-main{
+main {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
-    background: url("./img/background.png"); /* Altera o fundo */
+    background: url("./img/background.gif"); /* Altera o fundo */
     background-size: cover; /* Altera o tamanho da imagem de fundo */
-    padding: 0.6rem 0 0.6rem 0;
+    padding: 0.6rem 0 0.6rem 0; /* Espaço interno */
 }
 
 /* Estiliza as seções da página */
@@ -70,8 +102,8 @@ section {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
-    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
-    color: var(--azul);
+    margin-bottom: 2rem; /* Espaçamento abaixo de cada seção */
+    color: var(--branco); /* Cor do texto */
 }
 
 section form {
@@ -81,18 +113,19 @@ section form {
 }
 
 /* Estiliza os parágrafos dentro das seções */
-section p{
-    font-family: 'Barlow', sans-serif;
+section p {
+    font-family: 'Barlow', sans-serif; /* Altera a fonte */
 }
 
-section a{
-    font-family: 'Barlow', sans-serif;
+/* Estiliza as âncoras dentro das seções */
+section a {
+    font-family: 'Barlow', sans-serif; /* Altera a fonte */
 }
 
 /* Estiliza os inputs dentro das seções */
 section input {
     width: 30rem; /* Largura dos inputs */
-    border: none;
+    border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
@@ -105,7 +138,13 @@ section input {
 
 /* Adiciona efeito hover ao input das seções */
 section input:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    box-shadow: 0 0 20px var(--roxo); /* Adiciona uma sombra mais intensa */
+}
+
+/* Adiciona efeito focus ao input das seções */
+section input:focus {
+    outline: none; /* Remove a borda padrão */
+    box-shadow: 0 0 20px var(--roxo); /* Adiciona uma sombra mais intensa */
 }
 
 /* Estiliza os botões dentro das seções */
@@ -113,17 +152,17 @@ section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: var(--azul); /* Cor de fundo do botão */
+    background-color: var(--purpura); /* Cor de fundo do botão */
     color: var(--branco); /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+    transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Adiciona transição à sombra e fundo */
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
     background-color: var(--roxo); /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    box-shadow: 0 0 28px var(--roxo); /* Adiciona uma sombra mais intensa */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -142,26 +181,35 @@ section button:hover {
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: box-shadow 0.4s ease-in-out; /* Transição para o efeito neon */
+    color: var(--azul); /* Cor do texto */
+}
+
+/* Efeito hover nos resultados da pesquisa */
+.item-resultado:hover {
+    box-shadow: 0 0 22px var(--roxo); /* Efeito neon */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     margin-top: 0; /* Remove a margem do topo */
     font-size: 1.5rem; /* Tamanho da fonte */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Altera a fonte */
     color: var(--cinza); /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: var(--azul); /* Cor do texto dos links */
+    color: var(--purpura); /* Cor do texto dos links */
+    transition: text-shadow 0.4s ease-in-out, color 0.4s ease-in-out; /* Adiciona transição à cor do texto e ao efeito neon */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: var(--roxo); /* Cor do texto */
+    text-shadow: 0 0 15px var(--roxo); /* Efeito neon ao texto */
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
@@ -171,8 +219,8 @@ section button:hover {
 }
 
 /* Estilizar o rodapé da página */
-footer{
-    background: linear-gradient(var(--azul), var(--purpura)); /* Altera o fundo */
+footer {
+    background: var(--azul); /* Altera o fundo */
     color: var(--branco); /* Altera a cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     margin: 0; /* Remove a margem padrão */
@@ -183,8 +231,22 @@ footer{
     font-family: 'Barlow', sans-serif; /* Altera a fonte */
 }
 
+/* Estilizar as âncoras no rodapé */
+footer a {
+    color: var(--branco); /* Cor do texto */
+    font-family: 'Barlow', sans-serif; /* Altera a fonte */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.4s ease-in-out, text-shadow 0.4s ease-in-out; /* Adiciona transição à cor do texto */
+}
+
+/* Adiciona efeito hover às âncoras no rodapé */
+footer a:hover {
+    color: var(--ciano); /* Cor do texto */
+    text-shadow: 0 0 15px var(--ciano); /* Efeito neon ao texto */
+}
+
 /* Estilizar os parágrafos dentro do rodapé */
-footer p{
+footer p {
     margin: 0;
 }
 
