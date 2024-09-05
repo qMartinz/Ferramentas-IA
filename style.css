@@ -279,6 +279,10 @@ footer p {
     border: solid 4px transparent; /* Deixa a borda invisível para diminuir a barra */
 }
 
+.resultados-pesquisa::-webkit-scrollbar-button {
+    height: 0px;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
