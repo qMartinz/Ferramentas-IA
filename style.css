@@ -279,8 +279,9 @@ footer p {
     border: solid 4px transparent; /* Deixa a borda invisível para diminuir a barra */
 }
 
+/* Altera o tamanho da barra de scroll */
 .resultados-pesquisa::-webkit-scrollbar-button {
-    height: 0px;
+    height: 0px; /* Altura da barra de scroll */
 }
 
 @media (max-width: 768px) {
