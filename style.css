@@ -14,7 +14,7 @@ Branco:
     --azul: #000a2b;
     --purpura: #3a0d82;
     --roxo: #711cc1;
-    --roxo-claro: #d1c0ee;
+    --roxo-claro: #b28df1;
     --ciano: #22A7F0;
     --cinza: #45474B;
     --cinza-claro: #F0F0F0;
@@ -125,15 +125,21 @@ section a {
 /* Estiliza os inputs dentro das seções */
 section input {
     width: 30rem; /* Largura dos inputs */
-    border: none; /* Remove a borda padrão */
+    border: var(--purpura) solid 2px; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: var(--cinza); /* Cor do texto */
+    color: var(--branco); /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
-    background: var(--branco); /* Altera a cor do fundo */
+    background: rgba(17, 0, 255, 0.137); /* Altera a cor do fundo */
     transition: box-shadow 0.4s ease-in-out; /* Adiciona transição à sombra e borda */
+}
+
+/* Estiliza o texto de placeholder do input */
+section input::placeholder {
+    color: var(--roxo); /* Cor do texto */
+    opacity: 0.6; /* Opacidade do texto */
 }
 
 /* Adiciona efeito hover ao input das seções */
@@ -177,13 +183,14 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: var(--branco); /* Cor de fundo dos itens */
+    background: rgba(17, 0, 255, 0.137); /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
     transition: box-shadow 0.4s ease-in-out; /* Transição para o efeito neon */
-    color: var(--azul); /* Cor do texto */
+    color: var(--branco); /* Cor do texto */
+    border: var(--purpura) solid 2px;
 }
 
 /* Efeito hover nos resultados da pesquisa */
@@ -196,20 +203,19 @@ section button:hover {
     margin-top: 0; /* Remove a margem do topo */
     font-size: 1.5rem; /* Tamanho da fonte */
     font-family: 'Poppins', sans-serif; /* Altera a fonte */
-    color: var(--cinza); /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: var(--purpura); /* Cor do texto dos links */
+    color: var(--roxo-claro); /* Cor do texto dos links */
     transition: text-shadow 0.4s ease-in-out, color 0.4s ease-in-out; /* Adiciona transição à cor do texto e ao efeito neon */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     color: var(--roxo); /* Cor do texto */
-    text-shadow: 0 0 15px var(--roxo); /* Efeito neon ao texto */
+    text-shadow: 0 0 20px var(--roxo); /* Efeito neon ao texto */
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
