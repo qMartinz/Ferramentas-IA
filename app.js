@@ -1,39 +1,63 @@
-console.log(dados)
+// Variável global para armazenar os resultados da pesquisa (pode ser melhorada)
+let resultados = "";
 
-for (let index = 0; index < dados.length; index++) {
-    const item = dados[index];
+function pesquisar(pesquisa) {
+    // Verifica se a pesquisa não está vazia
+    if (pesquisa !== "") {
+        // Limpa os resultados anteriores
+        resultados = "";
 
-    criarItem(item.titulo, item.link, item.descricao, item.info);
+        // Obtém a seção onde os resultados serão exibidos
+        const section = document.getElementById('resultados');
+
+        // Divide a pesquisa em palavras-chave
+        const palavrasChave = pesquisa.split(' ');
+
+        // Filtra os dados com base nas palavras-chave
+        let filtrados = [];
+
+        for (let palavra of palavrasChave) {
+            // Utiliza RegExp para verificar se a palavra-chave encaixa no tema
+            const regex = new RegExp('\\b' + palavra + '\\b', 'i');
+            dados.filter(item => {
+                return item.temas.some(tema => {
+                    return regex.test(tema.toLowerCase());
+                });
+            }).forEach(item => filtrados.push(item)); // Adiciona o item aos resultados caso se encaixe na pesquisa
+        }
+
+        // Cria os elementos HTML para cada item filtrado
+        for (let item of filtrados) {
+            criarItem(item.titulo, item.link, item.descricao, item.info);
+        };
+
+        // Adiciona os resultados à seção
+        section.innerHTML = resultados;
+    }
 }
 
-function criarItem(titulo, link, descricao, info){
-    var div = document.createElement('div');
-    div.classList.add('item-resultado');
-
-    var h2 = document.createElement('h2');
-    var linkh2 = document.createElement('a');
-    linkh2.href = link;
-    h2.append(linkh2);
-    linkh2.textContent = titulo;
-
-    var p = document.createElement('p');
-    p.textContent = descricao;
-
-    var linkinfo = document.createElement('a');
-    linkinfo.href = info;
-    linkinfo.textContent = 'Mais informações';
-
-    div.append(h2);
-    div.append(p);
-    div.append(linkinfo);
-    document.querySelector('.resultados-pesquisa').append(div);
+function criarItem(titulo, link, descricao, info) {
+    // Adiciona novos resultados utilizando as informações adquiridas pela função
+    resultados += `
+    <div class="item-resultado">
+        <h2>
+            <a href="${link}" target="_blank">${titulo}</a>
+        </h2>
+        <p class="descricao-meta">
+            ${descricao}
+        </p>
+        <a href="${info}" target="_blank">Mais informações</a>
+    </div>
+    `;
 }
 
-const form = document.getElementById('pesquisa');
+const form = document.getElementById('pesquisa'); // Formulário de pesquisa
+
+// Realiza a pesquisa ao enviar o formulário
 form.addEventListener('submit', (event) => {
     event.preventDefault(); // Impede o envio padrão do formulário
-    const formData = new FormData(form);
+    const formData = new FormData(form); // Adquire os dados da pesquisa
 
     const pesquisa = Object.fromEntries(formData.entries());
-    console.log(pesquisa);
+    pesquisar(pesquisa.search); // Realiza a criação dos resultados
 });
