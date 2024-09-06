@@ -26,11 +26,13 @@ body {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     height: 100vh; /* Preenche a altura total da viewport */
+    min-height: 100vh;
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
     background: #F0F0F0; /* Altera o fundo */
     overflow-y: auto; /* Aumenta o tamanho do conteúdo para preencher a página */
     align-items: stretch; /* Estica o conteúdo para preencher a página */
+    width: 100%;
 }
 
 /* Estilizar o cabeçalho da página */
@@ -87,7 +89,7 @@ h1 {
     font-size: 2rem; /* Altera o tamanho da fonte */
     text-align: center; /* Alinha o texto */
     font-family: 'Poppins', sans-serif; /* Altera a fonte */
-    text-shadow: 0 0 15px var(--roxo); /* Efeito neon */
+    text-shadow: 0 0 15px var(--roxo);
 }
 
 /* Estilizar o conteúdo da página */
@@ -96,40 +98,49 @@ main {
     flex-direction: column; /* Alinha os itens na vertical */
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
-    background: url("./img/background.gif"); /* Altera o fundo */
+    background: url("../img/background.gif"); /* Altera o fundo */
     background-size: cover; /* Altera o tamanho da imagem de fundo */
     overflow-y: auto; /* Distribui o conteúdo automaticamente para preencher a página */
     flex: 1; /* Define o tamanho do item flex */
 }
 
-/* Estiliza as seções da página */
+/* Estiliza a seção */
 section {
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    margin-bottom: 1rem; /* Espaçamento abaixo de cada seção */
-    color: var(--branco); /* Cor do texto */
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    margin-bottom: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
 }
 
-/* Estiliza os formulário das seções */
+/* Estiliza os títulos dentro da seção */
+section h2 {
+    margin-top: 0; /* Remove a margem do topo */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-family: 'Poppins', sans-serif; /* Altera a fonte */
+    text-shadow: 0 0 20px var(--roxo); /* Efeito neon */
+    color: var(--branco); /* Cor do texto */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+/* Estiliza os formulário da seção */
 section form {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
 }
 
-/* Estiliza os parágrafos dentro das seções */
-section p {
+/* Estiliza legenda dos inputs */
+section label {
+    color: var(--branco); /* Cor do texto */
     font-family: 'Barlow', sans-serif; /* Altera a fonte */
+    font-size: 1.3rem; /* Altera o tamanho da fonte */
+    margin-bottom: 5px; /* Margem inferior */
 }
 
-/* Estiliza as âncoras dentro das seções */
-section a {
-    font-family: 'Barlow', sans-serif; /* Altera a fonte */
-}
-
-/* Estiliza os inputs dentro das seções */
-section input {
+/* Estiliza os inputs dentro da seção */
+section input, section textarea {
     width: 30rem; /* Largura dos inputs */
     border: var(--purpura) solid 2px; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
@@ -143,23 +154,28 @@ section input {
 }
 
 /* Estiliza o texto de placeholder do input */
-section input::placeholder {
+section input::placeholder, section textarea::placeholder {
     color: var(--roxo); /* Cor do texto */
     opacity: 0.6; /* Opacidade do texto */
 }
 
-/* Adiciona efeito hover ao input das seções */
-section input:hover {
+/* Adiciona efeito hover ao input da seção */
+section input:hover, section textarea:hover {
     box-shadow: 0 0 20px var(--roxo); /* Adiciona efeito neon */
 }
 
-/* Adiciona efeito focus ao input das seções */
-section input:focus {
+/* Adiciona efeito focus ao input da seção */
+section input:focus, section textarea:focus {
     outline: none; /* Remove a borda padrão */
     box-shadow: 0 0 20px var(--roxo); /* Adiciona efeito neon */
 }
 
-/* Estiliza os botões dentro das seções */
+/* Estiliza as áreas de texto */
+section textarea {
+    max-width: 80%; /* Largura máxima da caixa de texto */
+}
+
+/* Estiliza os botões dentro da seção */
 section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
@@ -177,58 +193,6 @@ section button:hover {
     box-shadow: 0 0 28px var(--roxo); /* Adiciona uma sombra mais intensa */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
-.resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
-}
-
-/* Estiliza cada item de resultado */
-.item-resultado {
-    background: rgba(17, 0, 255, 0.137); /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    transition: box-shadow 0.4s ease-in-out; /* Transição para o efeito neon */
-    color: var(--branco); /* Cor do texto */
-    border: var(--purpura) solid 2px; /* Borda ao redor do resultado */
-}
-
-/* Efeito hover nos resultados da pesquisa */
-.item-resultado:hover {
-    box-shadow: 0 0 22px var(--roxo); /* Efeito neon */
-}
-
-/* Estiliza os títulos dentro dos itens de resultado */
-.item-resultado h2 {
-    margin-top: 0; /* Remove a margem do topo */
-    font-size: 1.5rem; /* Tamanho da fonte */
-    font-family: 'Poppins', sans-serif; /* Altera a fonte */
-}
-
-/* Estiliza os links dentro dos itens de resultado */
-.item-resultado a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: var(--roxo-claro); /* Cor do texto dos links */
-    transition: text-shadow 0.4s ease-in-out, color 0.4s ease-in-out; /* Adiciona transição à cor do texto e ao efeito neon */
-}
-
-/* Estiliza os links quando são passados o mouse sobre */
-.item-resultado a:hover {
-    color: var(--roxo); /* Cor do texto */
-    text-shadow: 0 0 20px var(--roxo); /* Efeito neon ao texto */
-}
-
-/* Estiliza a descrição meta dentro dos itens de resultado */
-.descricao-meta {
-    color: var(--branco); /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
-}
-
 /* Estilizar o rodapé da página */
 footer {
     background: var(--azul); /* Altera o fundo */
@@ -237,7 +201,6 @@ footer {
     margin: 0; /* Remove a margem padrão */
     width: 100%; /* Largura total da página */
     font-family: 'Barlow', sans-serif; /* Altera a fonte */
-    flex-basis: 50px; /* Altera o tamanho preferido do footer */
     display: flex; /* Layout em modo flexbox */
     flex-direction: column; /* Altera a direção do  */
     align-items: center; /* Alinha os itens na vertical */
@@ -264,7 +227,7 @@ footer p {
 }
 
 /* Estiliza a barra de scroll */
-.resultados-pesquisa::-webkit-scrollbar {
+section::-webkit-scrollbar, section textarea::-webkit-scrollbar {
     background: rgba(17, 0, 255, 0.137); /* Cor de fundo */
     border-radius: 0.6rem; /* Arredonda os cantos */
     border: 1px var(--purpura) solid; /* Borda da barra */
@@ -272,12 +235,12 @@ footer p {
 }
 
 /* Adiciona efeito hover à barra de scroll */
-.resultados-pesquisa::-webkit-scrollbar:hover {
+section::-webkit-scrollbar:hover, section textarea::-webkit-scrollbar:hover {
     box-shadow: 0 0 10px var(--roxo); /* Efeito neon */
 }
 
 /* Estiliza a barrinha da scrollbar */
-.resultados-pesquisa::-webkit-scrollbar-thumb {
+section::-webkit-scrollbar-thumb, section textarea::-webkit-scrollbar-thumb {
     background: #711cc1; /* Cor do fundo */
     border-radius: 1rem; /* Arredonda as bordas */
     background-clip: content-box; /* Borda interna */
@@ -285,32 +248,30 @@ footer p {
 }
 
 /* Altera o tamanho da barra de scroll */
-.resultados-pesquisa::-webkit-scrollbar-button {
+section::-webkit-scrollbar-button, section textarea::-webkit-scrollbar-button {
     height: 0px; /* Altura da barra de scroll */
 }
 
-/* Responsividade para telas menores que 990px de largura */
 @media (max-width: 990px) {
     .resultados-pesquisa {
         width: 40rem; /* Largura da caixa de resultados em telas menores */
     }
 }
 
-/* Responsividade para telas menores que 768px de largura */
 @media (max-width: 768px) {
     header {
-        justify-content: center; /* Centraliza o conteúdo verticalmente */
-        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
     header div {
-        padding: 0; /* Remove espaçamento interno */
+        padding: 0;
     }
 
     header nav {
-        padding: 0; /* Remove espaçamento interno */
-        padding-bottom: 20px; /* Adiciona espaçamento interno inferior */
+        padding: 0;
+        padding-bottom: 20px;
     }
 
     h1 {
@@ -323,21 +284,22 @@ footer p {
         padding: 0.8rem; /* Espaçamento interno em telas menores */
     }
 
-    .resultados-pesquisa {
+    section {
         width: 30rem; /* Largura da caixa de resultados em telas menores */
     }
 
-    .item-resultado h2 {
+    h2 {
         font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
     }
 
-    footer {
-        font-size: 0.8rem; /* Tamanho da fonte do rodapé em telas menores */
+    footer p {
+        font-size: 1rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
 
 /* Responsividade para celulares */
 @media (max-width: 480px) {
+
     h1 {
         font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
         letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
@@ -352,15 +314,11 @@ footer p {
         font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
     }
 
-    .resultados-pesquisa {
+    section {
         width: 90%; /* Largura da caixa de resultados em telas pequenas */
     }
 
-    .item-resultado h2 {
+    h2 {
         font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }

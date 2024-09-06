@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/logonotext.png" type="image/x-icon">
+    <title>Contate o Ferramentas IA</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../img/logonotext.png" alt="Logo Ferramentas IA" width="60">
+            <h1>Ferramentas IA</h1>
+        </div>
+        <nav>
+            <a href="../">Início</a>
+            <a href="../sobre/">Sobre</a>
+            <a href="../contato/">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Entre em contato</h2>
+            <form id="contato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Ferramentas IA. Todos os direitos reservados</p>
+        <p>Todos os direitos das IAs aqui mencionadas pertencem à seus respectivos donos</p>
+        <p>Entre em contato pelo email: <a href="mailto:gustavo@ferramentasia.com.br">gustavo@ferramentasia.com.br</a>
+        </p>
+    </footer>
+    <script>
+        const form = document.getElementById('contato');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            alert('Mensagem enviada!');
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>
