@@ -75,8 +75,14 @@ let dados = [
         titulo: "Synthesys",
         link: "https://synthesys.io",
         descricao: "Synthesys é uma ferramenta de IA que permite criar vozes e avatares realistas para vídeos, áudios e apresentações. Com foco em gerar narrações naturais e expressivas, Synthesys é utilizada por empresas de marketing, educação e mídia para criar conteúdos mais envolventes e profissionais.",
-        temas: ["voz", "vozes", "avatar", "avatares digitais", "vídeo", "vídeos", "audio", "áudio", "áudios", "apresentação", "apresentações", "narrativa", "narração", "narrações", "narrativas", "marketing", "educação", "mídia", "mídias", "conteúdo", "conteúdos"]
+        temas: ["voz", "vozes", "avatar", "avatares digitais", "vídeo", "vídeos", "audio", "áudio", "áudios", "audios", "apresentação", "apresentações", "narrativa", "narração", "narrações", "narrativas", "marketing", "educação", "mídia", "mídias", "conteúdo", "conteúdos"]
     },
+    {
+        titulo: "Eleven Labs",
+        link: "https://elevenlabs.io/",
+        descricao: "ElevenLabs é uma plataforma de inteligência artificial especializada em geração de voz de alta qualidade. Ela permite criar áudios realistas a partir de texto, utilizando avançados modelos de síntese de voz. O serviço é muito popular entre criadores de conteúdo, desenvolvedores e empresas que buscam personalizar suas experiências sonoras, oferecendo vozes naturais com alta precisão de emoção e tonalidade.",
+        temas: ["voz", "vozes", "efeitos sonoros", "som", "sons", "avatar", "avatares digitais", "vídeo", "vídeos", "audio", "áudio", "áudios", "audios", "apresentação", "apresentações", "narrativa", "narração", "narrações", "narrativas", "marketing", "educação", "mídia", "mídias"]
+    }
     {
         titulo: "Boomy",
         link: "https://boomy.com",
