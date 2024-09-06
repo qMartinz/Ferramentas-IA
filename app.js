@@ -14,27 +14,29 @@ function pesquisar(pesquisa) {
         const palavrasChave = pesquisa.split(' ');
 
         // Filtra os dados com base nas palavras-chave
-        const filtrados = dados.filter(item => {
-            // Verifica se algum dos temas do item contém algumas das palavras-chave
-            return palavrasChave.every(palavra => {
-                return item.temas.some(tema => tema.toLowerCase().includes(palavra.toLowerCase()));
-            });
-        });
+        let filtrados = [];
 
-        // Limpa a seção de resultados antes de adicionar novos itens
-        section.innerHTML = "";
+        for (let palavra of palavrasChave) {
+            // Utiliza RegExp para verificar se a palavra-chave encaixa no tema
+            const regex = new RegExp('\\b' + palavra + '\\b', 'i');
+            dados.filter(item => {
+                return item.temas.some(tema => {
+                    return regex.test(tema.toLowerCase());
+                });
+            }).forEach(item => filtrados.push(item)); // Adiciona o item aos resultados caso se encaixe na pesquisa
+        }
 
         // Cria os elementos HTML para cada item filtrado
-        filtrados.forEach(item => {
+        for (let item of filtrados) {
             criarItem(item.titulo, item.link, item.descricao, item.info);
-        });
+        };
 
         // Adiciona os resultados à seção
         section.innerHTML = resultados;
     }
 }
 
-function criarItem(titulo, link, descricao, info){
+function criarItem(titulo, link, descricao, info) {
     // Adiciona novos resultados utilizando as informações adquiridas pela função
     resultados += `
     <div class="item-resultado">

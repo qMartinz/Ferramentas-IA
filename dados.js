@@ -123,7 +123,7 @@ let dados = [
         link: "https://pictory.ai",
         descricao: "Pictory é uma ferramenta de IA para criação de vídeos curtos e envolventes a partir de conteúdo de longa duração, como webinars e blogs. Com foco em redes sociais e marketing, Pictory permite que os usuários gerem vídeos rapidamente, destacando as partes mais importantes do conteúdo.",
         info: "https://pictory.ai/about-pictory",
-        temas: ["vídeo", "resumo de conteúdo", "marketing", "automação"]
+        temas: ["vídeo", "marketing", "automação"]
     },
     {
         titulo: "Pika Art",
@@ -137,7 +137,7 @@ let dados = [
         link: "https://fal.ai",
         descricao: "Fal AI é uma plataforma que oferece diversos modelos de geração de imagens utilizando inteligência artificial. Com uma ampla variedade de estilos e técnicas, Fal AI é uma ferramenta poderosa para artistas e designers que buscam explorar novas fronteiras na criação visual.",
         info: "https://fal.ai/about",
-        temas: ["geraçãoimagem", "arte digital", "criatividade", "design"]
+        temas: ["imagem", "arte digital", "criatividade", "design"]
     },
     {
         titulo: "Deepbrain AI",
