@@ -75,7 +75,7 @@ let dados = [
         titulo: "Synthesys",
         link: "https://synthesys.io",
         descricao: "Synthesys é uma ferramenta de IA que permite criar vozes e avatares realistas para vídeos, áudios e apresentações. Com foco em gerar narrações naturais e expressivas, Synthesys é utilizada por empresas de marketing, educação e mídia para criar conteúdos mais envolventes e profissionais.",
-        temas: ["voz", "vozes", "avatar", "avatares digitais", "vídeo", "vídeos", "audio", "áudio", "áudios", "audios", "apresentação", "apresentações", "narrativa", "narração", "narrações", "narrativas", "marketing", "educação", "mídia", "mídias", "conteúdo", "conteúdos"]
+        temas: ["voz", "vozes", "avatar", "avatares digitais", "vídeo", "vídeos", "audio", "áudio", "áudios", "audios", "som", "sons", "apresentação", "apresentações", "narrativa", "narração", "narrações", "narrativas", "marketing", "educação", "mídia", "mídias", "conteúdo", "conteúdos"]
     },
     {
         titulo: "Eleven Labs",
@@ -87,7 +87,7 @@ let dados = [
         titulo: "Boomy",
         link: "https://boomy.com",
         descricao: "Boomy é uma plataforma de IA que permite a criação de músicas de forma automática. Ideal para criadores de conteúdo, podcasters e desenvolvedores de jogos, Boomy oferece uma maneira rápida e fácil de gerar faixas musicais personalizadas, sem necessidade de experiência em produção.",
-        temas: ["música", "músicas", "som", "sons", "criatividade", "automação", "automatização", "geração", "produção", "personalização", "personalizar"]
+        temas: ["música", "músicas", "musica", "musicas", "som", "sons", "criatividade", "automação", "automatização", "geração", "produção", "personalização", "personalizar"]
     },
     {
         titulo: "Teachable Machine",
