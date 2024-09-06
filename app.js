@@ -33,6 +33,20 @@ function pesquisar(pesquisa) {
 
         // Adiciona os resultados à seção
         section.innerHTML = resultados;
+
+        // Notifica o usuário caso não haja resultados
+        if (filtrados.length <= 0) {
+            section.innerHTML = `
+            <div class="item-resultado">
+                <h2>
+                    Sem resultados
+                </h2>
+                <p class="descricao-meta">
+                    Foi mal, não temos uma IA que poderia te ajudar. :(
+                </p>
+            </div>
+            `
+        }
     }
 }
 

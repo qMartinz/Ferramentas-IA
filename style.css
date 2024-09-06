@@ -111,6 +111,14 @@ section {
     color: var(--branco); /* Cor do texto */
 }
 
+/* Estiliza os títulos dentro das divs da seção */
+section div h2 {
+    margin-top: 0; /* Remove a margem do topo */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-family: 'Poppins', sans-serif; /* Altera a fonte */
+    text-shadow: 0 0 20px var(--roxo); /* Efeito neon */
+}
+
 /* Estiliza os formulário das seções */
 section form {
     display: flex; /* Usa Flexbox para layout */
@@ -126,6 +134,7 @@ section p {
 /* Estiliza as âncoras dentro das seções */
 section a {
     font-family: 'Barlow', sans-serif; /* Altera a fonte */
+    text-shadow: none;
 }
 
 /* Estiliza os inputs dentro das seções */
