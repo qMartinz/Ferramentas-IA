@@ -99,7 +99,7 @@ main {
     background: url("../img/background.gif"); /* Altera o fundo */
     background-size: cover; /* Altera o tamanho da imagem de fundo */
     overflow-y: auto; /* Distribui o conteúdo automaticamente para preencher a página */
-    flex: 1; /* Define o tamanho do item flex */
+    flex: 14; /* Define o tamanho do item flex */
 }
 
 /* Estiliza a seção */
@@ -163,6 +163,7 @@ footer {
     flex-direction: column; /* Altera a direção do  */
     align-items: center; /* Alinha os itens na vertical */
     justify-content: center; /* Centraliza o conteúdo na vertical */
+    flex-grow: 1; /* Define o tamanho do item flex */
 }
 
 /* Estilizar as âncoras no rodapé */
