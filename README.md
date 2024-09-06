@@ -1,5 +1,5 @@
 # Ferramentas IA
-![image](https://github.com/user-attachments/assets/82b48c72-722a-4eee-a4cf-3efe467e9071)
+![image](https://github.com/user-attachments/assets/a4564f36-d857-4968-922b-c7a966665e74)
 
 Seja bem-vindo(a) ao **Ferramentas IA**! Aqui você poderá descobrir inúmeras ferramentas que utilizam a tecnologia da inteligência artifical para facilitar suas tarefas. Precisa criar um texto bonito? Aqui você acha uma IA que faz isso! Precisa criar um vídeo legal? Aqui você encontra a ferramenta perfeita!
 Acesse o site pelo seguinte link: [qmartinz.github.io/Ferramentas-IA](https://qmartinz.github.io/Ferramentas-IA/)
