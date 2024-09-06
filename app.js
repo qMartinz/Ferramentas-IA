@@ -18,10 +18,10 @@ function pesquisar(pesquisa) {
 
         for (let palavra of palavrasChave) {
             // Utiliza RegExp para verificar se a palavra-chave encaixa no tema
-            const regex = new RegExp('\\b' + palavra + '\\b', 'i');
+            const regex = new RegExp('\\b' + palavra.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") + '\\b', 'i');
             dados.filter(item => {
                 return item.temas.some(tema => {
-                    return regex.test(tema.toLowerCase());
+                    return regex.test(tema.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ""));
                 });
             }).forEach(item => filtrados.push(item)); // Adiciona o item aos resultados caso se encaixe na pesquisa
         }
