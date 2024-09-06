@@ -184,5 +184,101 @@ let dados = [
         link: "https://app.logomaster.ai/",
         descricao: "LogoMaster AI é uma ferramenta de design de logotipos que oferece uma experiência de criação fácil e intuitiva, utilizando inteligência artificial para gerar logotipos de alta qualidade. É ideal para startups e pequenas empresas que precisam de uma identidade visual profissional sem complicações.",
         temas: ["logotipo", "logo", "logos", "logotipos", "design", "identidade visual", "personalização", "personalizar"]
+    },
+    {
+        titulo: "Teachy",
+        link: "https://www.teachy.com.br/",
+        descricao: "Teachy é uma plataforma educacional que utiliza inteligência artificial para personalizar a experiência de aprendizado. Ideal para estudantes e educadores, a ferramenta oferece recursos adaptativos que ajudam a otimizar o ensino e o aprendizado em diversas disciplinas.",
+        temas: ["educação", "educar", "ensino", "ensinar", "aprendizado", "personalização", "personalizar"]
+    },
+    {
+        titulo: "Quillbot",
+        link: "https://quillbot.com/",
+        descricao: "Quillbot é uma ferramenta de escrita que usa inteligência artificial para ajudar na criação e revisão de textos. Com funcionalidades como parafrasear, resumir e corrigir gramática, Quillbot é ideal para escritores, estudantes e profissionais que buscam aprimorar a qualidade de seus textos.",
+        temas: ["escrita", "texto", "gramática", "gramatica", "paráfrase", "parafrase", "resumo", "edição", "escrever", "reescrever", "reescrita"]
+    },
+    {
+        titulo: "Mapify",
+        link: "https://mapify.so/pt",
+        descricao: "Mapify é uma ferramenta que utiliza inteligência artificial para gerar mapas conceituais de forma automática. Ela facilita a organização de ideias e informações, sendo especialmente útil para estudantes e profissionais que precisam visualizar e estruturar conhecimento de maneira clara.",
+        temas: ["organização", "organizar", "conhecimento", "mapas conceituais", "mapa mental", "aprendizado"]
+    },
+    {
+        titulo: "Matific",
+        link: "https://www.matific.com/bra/pt-br/home/",
+        descricao: "Matific é uma plataforma educacional que oferece jogos e atividades matemáticas interativas para crianças, usando inteligência artificial para adaptar o conteúdo ao nível de aprendizado dos alunos. É utilizada por escolas e famílias para tornar o aprendizado de matemática mais envolvente e eficaz.",
+        temas: ["matemática", "matematica", "educação", "educar", "ensino", "ensinar", "crianças", "jogos educativos", "aprendizado adaptativo", "aprender"]
+    },
+    {
+        titulo: "Character AI",
+        link: "https://character.ai",
+        descricao: "Character AI é uma plataforma que permite aos usuários criar e interagir com personagens de IA personalizados. Usada para entretenimento, educação e treinamento, essa ferramenta oferece uma experiência imersiva ao gerar diálogos com personagens virtuais que podem ter personalidades, habilidades e conhecimentos variados.",
+        temas: ["conversação", "conversar", "personagens virtuais", "entretenimento", "personagem", "educação", "educar"]
+    },
+    {
+        titulo: "Replika",
+        link: "https://replika.ai",
+        descricao: "Replika é uma IA de conversação que atua como um amigo virtual, permitindo aos usuários conversar sobre qualquer tópico. Utilizada para apoio emocional, socialização e até mesmo como uma ferramenta para desenvolvimento pessoal, Replika é conhecida por suas interações empáticas e personalizadas.",
+        temas: ["conversação", "conversar", "apoio emocional", "terapia", "assistente", "bem-estar"]
+    },
+    {
+        titulo: "Copy.ai",
+        link: "https://www.copy.ai",
+        descricao: "Copy.ai é uma ferramenta de IA voltada para a geração de conteúdo de marketing e redação. Ela ajuda empresas e profissionais a criar textos para anúncios, descrições de produtos, e-mails e muito mais, economizando tempo e aumentando a eficiência das campanhas de marketing.",
+        temas: ["texto", "marketing", "automação", "automatizar", "criatividade"]
+    },
+    {
+        titulo: "Perplexity AI",
+        link: "https://www.perplexity.ai",
+        descricao: "Perplexity AI é um motor de busca assistido por IA que fornece respostas claras e precisas para perguntas dos usuários. Ele combina técnicas de NLP com a busca tradicional para oferecer respostas mais contextualizadas e detalhadas, tornando-o uma ferramenta útil para pesquisas e aprendizado.",
+        temas: ["busca", "NLP", "pesquisa", "informação", "bibliografia", "pesquisar", "informar", "informações", "dados"]
+    },
+    {
+        titulo: "Lumen5",
+        link: "https://www.lumen5.com",
+        descricao: "Lumen5 é uma plataforma de criação de vídeos que usa IA para transformar textos e artigos em vídeos dinâmicos. Ideal para marketing digital, a ferramenta facilita a produção de vídeos envolventes e profissionais com base em conteúdo escrito, tornando o processo de criação de vídeos acessível a todos.",
+        temas: ["vídeo", "video", "vídeos", "videos", "marketing", "conteúdo digital", "automação", "automatizar"]
+    },
+    {
+        titulo: "Pictory",
+        link: "https://pictory.ai",
+        descricao: "Pictory é uma ferramenta de IA para criação de vídeos curtos e envolventes a partir de conteúdo de longa duração, como webinars e blogs. Com foco em redes sociais e marketing, Pictory permite que os usuários gerem vídeos rapidamente, destacando as partes mais importantes do conteúdo.",
+        temas: ["vídeo", "video", "vídeos", "videos", "resumo de conteúdo", "marketing", "automação", "automatizar"]
+    },
+    {
+        titulo: "Pika Art",
+        link: "https://pika.art",
+        descricao: "Pika Art é uma ferramenta de IA que transforma imagens estáticas em vídeos dinâmicos. Ideal para criadores de conteúdo e designers, Pika Art oferece uma maneira simples de adicionar movimento e vida às suas ilustrações, fotos e gráficos, criando vídeos cativantes a partir de imagens.",
+        temas: ["imagem", "imagens", "vídeo", "video", "vídeos", "videos", "animação", "animações", "design"]
+    },
+    {
+        titulo: "Fal AI",
+        link: "https://fal.ai",
+        descricao: "Fal AI é uma plataforma que oferece diversos modelos de geração de imagens utilizando inteligência artificial. Com uma ampla variedade de estilos e técnicas, Fal AI é uma ferramenta poderosa para artistas e designers que buscam explorar novas fronteiras na criação visual.",
+        temas: ["imagem", "imagens", "arte digital", "criatividade", "design"]
+    },
+    {
+        titulo: "Deepbrain AI",
+        link: "https://www.deepbrain.io/pt",
+        descricao: "Deepbrain AI oferece uma série de ferramentas baseadas em IA para gerar vídeos e animar imagens de pessoas. Muito utilizada em marketing, educação e entretenimento, a plataforma permite transformar fotos em vídeos animados realistas, criando avatares digitais com expressões e movimentos naturais.",
+        temas: ["vídeo", "video", "vídeos", "videos", "animação", "imagem", "imagens", "avatares digitais", "marketing"]
+    },
+    {
+        titulo: "Stable Diffusion",
+        link: "https://stability.ai",
+        descricao: "Stable Diffusion é um modelo de IA para geração de imagens baseado em técnicas de difusão. Ele permite criar imagens a partir de descrições textuais, com um controle detalhado sobre o estilo e a composição. Stable Diffusion é popular entre artistas digitais e desenvolvedores por sua flexibilidade e qualidade.",
+        temas: ["imagem", "imagens", "arte digital", "criatividade", "text-to-image"]
+    },
+    {
+        titulo: "DeepL Translator",
+        link: "https://www.deepl.com",
+        descricao: "DeepL é um tradutor online baseado em IA, conhecido por sua precisão e fluência em comparação com outros tradutores automáticos. Ele oferece traduções em múltiplos idiomas e é amplamente utilizado por profissionais e empresas que precisam de traduções rápidas e confiáveis.",
+        temas: ["tradução", "NLP", "linguagem", "texto", "traduzir"]
+    },
+    {
+        titulo: "Descript",
+        link: "https://www.descript.com",
+        descricao: "Descript é uma plataforma de edição de áudio e vídeo assistida por IA que transforma o processo de edição em uma tarefa simples e intuitiva. Com ferramentas para transcrição automática, edição de áudio baseada em texto e geração de voz, Descript é ideal para criadores de podcast, vídeos e outros conteúdos multimídia.",
+        temas: ["áudio", "audio", "audios", "áudios", "edição", "vídeo", "video", "vídeos", "videos", "transcrição", "transcrever", "voz", "vozes"]
     }
 ];
