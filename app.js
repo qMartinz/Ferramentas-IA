@@ -28,7 +28,7 @@ function pesquisar(pesquisa) {
 
         // Cria os elementos HTML para cada item filtrado
         for (let item of filtrados) {
-            criarItem(item.titulo, item.link, item.descricao, item.info);
+            criarItem(item.titulo, item.link, item.descricao);
         };
 
         // Adiciona os resultados à seção
@@ -36,7 +36,7 @@ function pesquisar(pesquisa) {
     }
 }
 
-function criarItem(titulo, link, descricao, info) {
+function criarItem(titulo, link, descricao) {
     // Adiciona novos resultados utilizando as informações adquiridas pela função
     resultados += `
     <div class="item-resultado">
@@ -46,7 +46,6 @@ function criarItem(titulo, link, descricao, info) {
         <p class="descricao-meta">
             ${descricao}
         </p>
-        <a href="${info}" target="_blank">Mais informações</a>
     </div>
     `;
 }
