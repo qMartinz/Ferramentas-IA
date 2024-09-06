@@ -157,12 +157,12 @@ footer {
     color: var(--branco); /* Altera a cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     margin: 0; /* Remove a margem padrão */
-    width: 100%; /* Largura total da página */
     font-family: 'Barlow', sans-serif; /* Altera a fonte */
     display: flex; /* Layout em modo flexbox */
     flex-direction: column; /* Altera a direção do  */
     align-items: center; /* Alinha os itens na vertical */
     justify-content: center; /* Centraliza o conteúdo na vertical */
+    flex-basis: 50px; /* Altera o tamanho preferido do footer */
     flex-grow: 1; /* Define o tamanho do item flex */
 }
 
