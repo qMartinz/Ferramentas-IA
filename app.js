@@ -15,7 +15,7 @@ function pesquisar(pesquisa) {
 
         // Filtra os dados com base nas palavras-chave
         const filtrados = dados.filter(item => {
-            // Verifica se algum dos temas do item contém todas as palavras-chave
+            // Verifica se algum dos temas do item contém algumas das palavras-chave
             return palavrasChave.every(palavra => {
                 return item.temas.some(tema => tema.toLowerCase().includes(palavra.toLowerCase()));
             });
