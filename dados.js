@@ -33,19 +33,19 @@ let dados = [
         titulo: "Jasper AI",
         link: "https://www.jasper.ai",
         descricao: "Jasper AI é uma plataforma de inteligência artificial focada em geração de conteúdo, utilizada por profissionais de marketing, escritores e criadores de conteúdo. Com uma ampla gama de modelos pré-treinados, Jasper ajuda a criar textos, slogans, descrições de produtos e muito mais, economizando tempo e esforço.",
-        temas: ["conteúdo", "conteúdos", "marketing", "propaganda", "publicidade", "criatividade", "automação", "automatizar", "automatização", "geração", "produção"]
+        temas: ["conteúdo", "conteúdos", "marketing", "propaganda", "publicidade", "automação", "automatizar", "automatização", "geração", "produção"]
     },
     {
         titulo: "MidJourney",
         link: "https://www.midjourney.com",
         descricao: "MidJourney é uma IA de geração de imagens que permite aos usuários criar obras de arte digitais a partir de descrições textuais. Utilizada por designers, artistas e criadores, essa ferramenta transforma ideias em imagens de alta qualidade, explorando novas formas de expressão visual.",
-        temas: ["imagens", "imagem", "arte digital", "arte", "obras", "design", "criatividade", "expressão", "expressões", "visual", "visuais"]
+        temas: ["imagens", "imagem", "arte digital", "arte", "obras", "design", "expressão", "expressões", "visual", "visuais"]
     },
     {
         titulo: "DALL-E",
         link: "https://openai.com/dall-e",
         descricao: "DALL-E é um modelo de IA desenvolvido pela OpenAI que gera imagens a partir de descrições textuais. Ele utiliza a arquitetura GPT para entender descrições complexas e criar ilustrações que correspondem às palavras, oferecendo uma ferramenta poderosa para designers, publicitários e artistas.",
-        temas: ["imagens", "imagem", "arte digital", "arte", "obras", "design", "criatividade", "openai", "ilustração", "ilustrações"]
+        temas: ["imagens", "imagem", "arte digital", "arte", "obras", "design", "openai", "ilustração", "ilustrações"]
     },
     {
         titulo: "Cohere AI",
@@ -57,7 +57,7 @@ let dados = [
         titulo: "Hugging Face",
         link: "https://huggingface.co",
         descricao: "Hugging Face é uma plataforma líder em NLP e Machine Learning que oferece ferramentas de código aberto para desenvolvedores treinarem e implementarem modelos de linguagem e visão computacional. Amplamente utilizada na academia e na indústria, a Hugging Face disponibiliza modelos pré-treinados e uma comunidade ativa para colaboração.",
-        temas: ["NLP", "machine learning", "aprendizado de máquina", "código aberto", "open source", "visão computacional", "treinamento", "implementação", "colaboração", "academia", "indústria"]
+        temas: ["NLP", "machine learning", "código aberto", "open source", "visão computacional", "treinamento", "implementação", "colaboração", "academia", "indústria"]
     },
     {
         titulo: "Synthesia",
@@ -69,7 +69,7 @@ let dados = [
         titulo: "Runway ML",
         link: "https://runwayml.com",
         descricao: "Runway ML é uma plataforma de criação de conteúdo visual assistida por IA, que permite a edição de vídeos e imagens de forma inovadora. Com uma variedade de ferramentas de aprendizado de máquina, Runway ML é utilizada por artistas, cineastas e criadores de conteúdo para explorar novas formas de expressão visual.",
-        temas: ["vídeo", "video", "vídeos", "videos", "edição", "editar", "imagem", "imagens", "machine learning", "aprendizado de máquina", "criatividade", "expressão", "expressões", "visual", "visuais"]
+        temas: ["vídeo", "video", "vídeos", "videos", "edição", "editar", "imagem", "imagens", "machine learning", "expressão", "expressões", "visual", "visuais"]
     },
     {
         titulo: "Synthesys",
@@ -87,7 +87,7 @@ let dados = [
         titulo: "Boomy",
         link: "https://boomy.com",
         descricao: "Boomy é uma plataforma de IA que permite a criação de músicas de forma automática. Ideal para criadores de conteúdo, podcasters e desenvolvedores de jogos, Boomy oferece uma maneira rápida e fácil de gerar faixas musicais personalizadas, sem necessidade de experiência em produção.",
-        temas: ["música", "músicas", "musica", "musicas", "som", "sons", "criatividade", "automação", "automatização", "geração", "produção", "personalização", "personalizar"]
+        temas: ["música", "músicas", "musica", "musicas", "som", "sons", "automação", "automatização", "geração", "produção", "personalização", "personalizar"]
     },
     {
         titulo: "Teachable Machine",
@@ -99,25 +99,25 @@ let dados = [
         titulo: "Pixlr",
         link: "https://pixlr.com/br/",
         descricao: "Pixlr é uma plataforma de edição de fotos online que utiliza IA para facilitar o processo de criação e edição de imagens. Com uma interface intuitiva e uma ampla gama de ferramentas, Pixlr é ideal para designers, fotógrafos e entusiastas que buscam uma solução rápida e eficiente.",
-        temas: ["edição", "editar", "imagem", "imagens", "foto", "fotos", "fotografia", "design", "ferramentas", "criação", "criatividade"]
+        temas: ["edição", "editar", "imagem", "imagens", "foto", "fotos", "fotografia", "design", "ferramentas", "criação"]
     },
     {
         titulo: "Removal.AI",
         link: "https://removal.ai/",
         descricao: "Removal.AI é uma ferramenta online que utiliza inteligência artificial para remover automaticamente o fundo de imagens. Com uma interface simples e rápida, é ideal para designers, fotógrafos e criadores de conteúdo que precisam de recortes precisos de imagens sem a necessidade de edição manual.",
-        temas: ["fundo", "fundo de imagem", "edição", "editar", "imagem", "imagens", "design", "recorte", "recortes", "recortar", "criadores de conteúdo"]
+        temas: ["fundo", "fundo", "edição", "editar", "imagem", "imagens", "design", "recorte", "recortes", "recortar", "criadores", "conteúdo"]
     },
     {
         titulo: "Tess AI",
         link: "https://pareto.io/pt-br/tess-ai/",
         descricao: "Tess AI é uma ferramenta de inteligência artificial desenvolvida pela Pareto que auxilia na automação de tarefas administrativas e operacionais, como coleta de dados, agendamento e monitoramento de processos. É projetada para aumentar a eficiência e permitir que equipes se concentrem em atividades mais estratégicas.",
-        temas: ["automação", "automatização", "administrativa", "administração", "tarefas", "negócios", "operacional", "operacionais", "eficiência", "agendamento", "monitoramento", "processo", "processos", "dados", "coleta de dados"]
+        temas: ["automação", "automatização", "administrativa", "administração", "tarefas", "negócios", "operacional", "operacionais", "eficiência", "agendamento", "monitoramento", "processo", "processos", "dados", "coleta", "dados"]
     },
     {
         titulo: "Tabnine",
         link: "https://www.tabnine.com/",
         descricao: "Tabnine é uma ferramenta de autocompletar código baseada em inteligência artificial, que oferece sugestões de código em tempo real para desenvolvedores. Integrado a vários editores de texto e IDEs, Tabnine aumenta a produtividade e ajuda a escrever código de forma mais rápida e precisa.",
-        temas: ["programação", "programar", "código", "codigos", "códigos", "desenvolvimento", "software", "produtividade", "sugestões", "escrever", "IDE", "editor de texto", "editores de texto"]
+        temas: ["programação", "programar", "código", "codigos", "códigos", "desenvolvimento", "software", "produtividade", "sugestões", "escrever", "IDE", "editor", "texto", "editores", "texto"]
     },
     {
         titulo: "Scenario",
@@ -225,7 +225,7 @@ let dados = [
         titulo: "Copy.ai",
         link: "https://www.copy.ai",
         descricao: "Copy.ai é uma ferramenta de IA voltada para a geração de conteúdo de marketing e redação. Ela ajuda empresas e profissionais a criar textos para anúncios, descrições de produtos, e-mails e muito mais, economizando tempo e aumentando a eficiência das campanhas de marketing.",
-        temas: ["texto", "marketing", "automação", "automatizar", "criatividade"]
+        temas: ["texto", "marketing", "automação", "automatizar"]
     },
     {
         titulo: "Perplexity AI",
@@ -243,7 +243,7 @@ let dados = [
         titulo: "Pictory",
         link: "https://pictory.ai",
         descricao: "Pictory é uma ferramenta de IA para criação de vídeos curtos e envolventes a partir de conteúdo de longa duração, como webinars e blogs. Com foco em redes sociais e marketing, Pictory permite que os usuários gerem vídeos rapidamente, destacando as partes mais importantes do conteúdo.",
-        temas: ["vídeo", "video", "vídeos", "videos", "resumo de conteúdo", "marketing", "automação", "automatizar"]
+        temas: ["vídeo", "video", "vídeos", "videos", "resumo", "conteúdo", "marketing", "automação", "automatizar"]
     },
     {
         titulo: "Pika Art",
@@ -255,7 +255,7 @@ let dados = [
         titulo: "Fal AI",
         link: "https://fal.ai",
         descricao: "Fal AI é uma plataforma que oferece diversos modelos de geração de imagens utilizando inteligência artificial. Com uma ampla variedade de estilos e técnicas, Fal AI é uma ferramenta poderosa para artistas e designers que buscam explorar novas fronteiras na criação visual.",
-        temas: ["imagem", "imagens", "arte digital", "criatividade", "design"]
+        temas: ["imagem", "imagens", "arte digital", "design"]
     },
     {
         titulo: "Deepbrain AI",
@@ -267,7 +267,7 @@ let dados = [
         titulo: "Stable Diffusion",
         link: "https://stability.ai",
         descricao: "Stable Diffusion é um modelo de IA para geração de imagens baseado em técnicas de difusão. Ele permite criar imagens a partir de descrições textuais, com um controle detalhado sobre o estilo e a composição. Stable Diffusion é popular entre artistas digitais e desenvolvedores por sua flexibilidade e qualidade.",
-        temas: ["imagem", "imagens", "arte digital", "criatividade", "text-to-image"]
+        temas: ["imagem", "imagens", "arte digital", "text-to-image"]
     },
     {
         titulo: "DeepL Translator",
